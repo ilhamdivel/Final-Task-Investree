@@ -22,7 +22,7 @@ public class UserDetail implements Serializable {
 
     @OneToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "id_user")
-    private User user;
+    private Users users;
 
 
 }

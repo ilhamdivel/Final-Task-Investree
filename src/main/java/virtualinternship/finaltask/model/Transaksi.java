@@ -26,11 +26,9 @@ public class Transaksi implements Serializable {
     @Column(name = "status")
     private String status;
 
-    @ManyToOne
-    @JoinColumn(name = "id_peminjam")
-    private User peminjam;
+    @Column(name = "id_peminjam")
+    private Integer idPeminjam;
 
-    @ManyToOne
-    @JoinColumn(name = "id_meminjam")
-    private User meminjam;
+    @Column(name = "id_meminjam")
+    private Integer idMeminjam;
 }

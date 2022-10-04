@@ -3,11 +3,12 @@ package virtualinternship.finaltask.model;
 import lombok.Data;
 
 import javax.persistence.*;
+import java.io.Serializable;
 
 @Entity
 @Data
 @Table(name = "transaksi")
-public class Transaksi {
+public class Transaksi implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
